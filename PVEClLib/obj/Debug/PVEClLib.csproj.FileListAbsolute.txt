@@ -1,5 +1,0 @@
-C:\Users\liu\PVEHackathon\PVEClLib\bin\Debug\PVEClLib.dll
-C:\Users\liu\PVEHackathon\PVEClLib\bin\Debug\PVEClLib.pdb
-C:\Users\liu\PVEHackathon\PVEClLib\obj\Debug\PVEClLib.dll
-C:\Users\liu\PVEHackathon\PVEClLib\obj\Debug\PVEClLib.pdb
-C:\Users\liu\PVEHackathon\PVEClLib\obj\Debug\PVEClLib.csprojResolveAssemblyReference.cache

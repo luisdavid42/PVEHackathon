@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            Titulo
+        </th>
+        <th>
+            Problema
+        </th>
+        <th>
+            Solucion
+        </th>
+        <th>
+            Autor
+        </th>
+        <th>
+            Equipo
+        </th>
+        <th>
+            Solicitudes
+        </th>
+        <th>
+            Likes
+        </th>
+        <th>
+            Comentario
+        </th>
+        <th>
+            Seleccion   ada
+        </th>
+        <th></th>
+    </tr>
+
+    @{
+        int i = 0;
+        foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @ViewBag.Ideas[@i].titulo
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].problema
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].solucion
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].autor
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].equipo
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].solicitudes.ToString()
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].likes.ToString()
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].comentarios.ToString()
+                </td>
+                <td>
+                    @ViewBag.Ideas[@i].fueSeleccionada
+                </td>
+            </tr>
+            i++;
+        }
+    }
+
+</table>

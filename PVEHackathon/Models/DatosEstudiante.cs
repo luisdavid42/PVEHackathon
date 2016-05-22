@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace PVEClLib
+namespace PVEHackathon.Models
 {
     /// <summary>
     /// Datos estudiantiles de una Cuenta de Usuario.
@@ -30,10 +29,24 @@ namespace PVEClLib
 
 
         #region Constructores
+
+        /// <summary>
+        /// Inicializa los Datos de un Estudiante vacío.
+        /// </summary>
         public DatosEstudiante()
         {
             notificaciones = new List<String>();
-            solicitudes = new List<String>();  
+            solicitudes = new List<String>();
+        }
+
+        /// <summary>
+        /// Inicializa los Datos de un Estudiante a partir de su carrera.
+        /// </summary>
+        public DatosEstudiante(String carrera)
+        {
+            notificaciones = new List<String>();
+            solicitudes = new List<String>();
+            this.carrera = carrera;
         }
         #endregion
 

@@ -176,6 +176,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Eventos.cs" />
+    <Compile Include="Models\Ideas.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,6 +242,8 @@
     <Content Include="Views\Evento\EventosMain.cshtml" />
     <Content Include="Views\Idea\IdeasMain.cshtml" />
     <Content Include="Views\Idea\IdeaUnica.cshtml" />
+    <Content Include="Views\Idea\Index.cshtml" />
+    <Content Include="Views\Evento\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

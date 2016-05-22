@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace PVEClLib
+namespace PVEHackathon.Models
 {
     /// <summary>
     /// Datos generales de una Cuenta de Usuario.
@@ -21,7 +20,7 @@ namespace PVEClLib
         /// Clave para autenticarse en el sistema.
         /// </summary>
         public String contrasena;
-	    
+
         /// <summary>
         /// Almacena los datos personales de la cuenta.
         /// </summary>
@@ -41,20 +40,20 @@ namespace PVEClLib
         /// Imagen principal de la Cuenta.
         /// </summary>
         public String imagen;
-	    #endregion
+        #endregion
 
 
-	    #region Constructores
+        #region Constructores
         /// <summary>
         /// Inicializa una Cuenta Vacia.
         /// </summary>
-	    public Cuenta()
+        public Cuenta()
         {
             datosPersona = new DatosPersona();
         }
 
         /// <summary>
-        /// Inicializa una cuenta a partir de su rol.
+        /// Inicializa una cuenta a partir de su rol de estudiante.
         /// </summary>
         /// <param name="esEstudiante"></param>
         public Cuenta(bool esEstudiante)
@@ -62,10 +61,12 @@ namespace PVEClLib
             datosPersona = new DatosPersona();
             this.esEstudiante = esEstudiante;
         }
-	    #endregion
+
+        #endregion
 
 
         #region Metodos
+
         #endregion
     }
 }

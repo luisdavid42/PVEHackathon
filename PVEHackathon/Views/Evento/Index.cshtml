@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+<table class="table">
+    <tr>
+        <th>
+            Nombre
+        </th>
+        <th>
+            descripcion
+        </th>
+        <th>
+            fechaInico
+        </th>
+        <th>
+            fechaClausura
+        </th>
+        <th>
+            ideas
+        </th>
+        <th>
+            imagen
+        </th>
+        <th></th>
+    </tr>
+
+    @{
+        int i = 0;
+        foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @ViewBag.Eventos[@i].nombre
+                </td>
+                <td>
+                    @ViewBag.Eventos[@i].descripcion
+                </td>
+                <td>
+                    @ViewBag.Eventos[@i].fechaInico
+                </td>
+                <td>
+                    @ViewBag.Eventos[@i].fechaClausura
+                </td>
+                <td>
+                    @ViewBag.Eventos[@i].ideas
+                </td>
+                <td>
+                    @ViewBag.Eventos[@i].imagen
+                </td>
+
+            </tr>
+            i++;
+        }
+    }
+
+</table>
+
+
