@@ -26,5 +26,13 @@ namespace PVEHackathon.Controllers
 
             return View();
         }
+        public ActionResult Eventos()
+        {
+            return View();
+        }
+
+
+
+
     }
 }
