@@ -51,6 +51,7 @@ namespace PVEHackathon.Models
             fechaInico = new DateTime();
             fechaClausura = new DateTime();
             ideas = new List<Ideas>();
+            imagen =  "http://static.parastorage.com/services/wixapps/2.461.18/javascript/wixapps/apps/blog/images/no-image-icon.png";
         }
 
         #endregion
