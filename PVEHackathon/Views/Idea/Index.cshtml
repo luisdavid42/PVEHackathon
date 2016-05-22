@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Ideas</h2>
 
 @*<p>
     @Html.ActionLink("Create New", "Create")
@@ -34,7 +34,7 @@
             Comentario
         </th>
         <th>
-            Seleccion   ada
+            Seleccionada
         </th>
         <th></th>
     </tr>
@@ -67,10 +67,13 @@
                     @ViewBag.Ideas[@i].likes.ToString()
                 </td>
                 <td>
+                   
                     @ViewBag.Ideas[@i].comentarios.ToString()
                 </td>
                 <td>
-                    @ViewBag.Ideas[@i].fueSeleccionada
+                    <input type="checkbox" name="vehicle" value=@ViewBag.Ideas[@i].fueSeleccionada>
+                    @*@Html.CheckBoxFor(@ViewBag.Ideas[@i].fueSeleccionada)*@
+                    @*@ViewBag.Ideas[@i].fueSeleccionada*@
                 </td>
             </tr>
             i++;
