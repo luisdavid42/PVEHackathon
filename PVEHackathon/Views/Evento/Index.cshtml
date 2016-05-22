@@ -49,7 +49,8 @@
                     @ViewBag.Eventos[@i].fechaClausura
                 </td>
                 <td>
-                    @ViewBag.Eventos[@i].ideas
+                    
+                    @Html.ActionLink(ViewBag.Eventos[@i]. , "IdeaUnica", "Idea")
                 </td>
                 <td>
                     @ViewBag.Eventos[@i].imagen

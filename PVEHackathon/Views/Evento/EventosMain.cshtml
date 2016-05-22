@@ -24,7 +24,10 @@
     </thead>
     <tbody> 
         <tr>
-            <td ondblclick="IdeasMain()">Column content</td>
+            @*<td ondblclick="@Html.("Index")"> Nombre</td>*@
+            <td>@Html.ActionLink("Nombre", "Index", "Evento")</td>
+            @*<td>@Html.Action("Index")</td>*@
+          
             <td>Column content</td>
         </tr>
     </tbody>
